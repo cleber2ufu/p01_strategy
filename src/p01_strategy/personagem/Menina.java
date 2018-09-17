@@ -5,6 +5,8 @@
  */
 package p01_strategy.personagem;
 
+import p01_strategy.ataque.AtaqueFraco;
+import p01_strategy.corrida.CorridaRapida;
 import p01_strategy.pulo.PuloBaixo;
 
 /**
@@ -16,6 +18,10 @@ public class Menina extends Personagem{
     public Menina(){
         super();
         this.pulo = new PuloBaixo();
+        this.ataque = new AtaqueFraco();
+        this.corrida = new CorridaRapida();                
+               
     }
+    
     
 }

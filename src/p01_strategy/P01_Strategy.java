@@ -22,13 +22,23 @@ public class P01_Strategy {
     public static void main(String[] args) {
         
         Personagem ana = new Menina();
-        ana.pular();
-        
         Personagem jao = new Menino();
-        jao.pular();
-        
         Personagem axe = new Monstro();
-        axe.pular();
+        
+        ana.pular();
+        jao.pular();
+        axe.pular();       
+        
+        ana.atacar();
+        jao.atacar();
+        axe.atacar();
+        
+        ana.correr();
+        jao.correr();
+        axe.correr();
+        
+        
+        
     }
     
 }

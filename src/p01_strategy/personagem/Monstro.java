@@ -5,6 +5,8 @@
  */
 package p01_strategy.personagem;
 
+import p01_strategy.ataque.AtaqueForte;
+import p01_strategy.corrida.CorridaDevagar;
 import p01_strategy.pulo.PuloAlto;
 
 /**
@@ -16,6 +18,8 @@ public class Monstro extends Personagem{
     public Monstro() {
         super();
         this.pulo = new PuloAlto();
+        this.ataque = new AtaqueForte();
+        this.corrida = new CorridaDevagar();
     }
     
     
